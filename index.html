@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Preventivo · Festa di Laurea — Ruggiero Dimiccoli</title>
+<meta name="description" content="Quattro soluzioni per il servizio fotografico della tua laurea, da € 80 a € 250. Consegna digitale e 10 stampe omaggio incluse — Ruggiero Dimiccoli Fotografia.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%23155C3D'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='7.5'%20fill='none'%20stroke='%23F6FAF7'%20stroke-width='2'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
@@ -12,9 +14,9 @@
 <meta property="og:url" content="https://rdimiccoli.github.io/preventivo-laurea/">
 <meta property="og:title" content="Preventivo Fotografico · Festa di Laurea">
 <meta property="og:description" content="Quattro soluzioni per raccontare la tua laurea — Ruggiero Dimiccoli Fotografia">
-<meta property="og:image" content="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(13).jpg">
+<meta property="og:image" content="https://rdimiccoli.github.io/preventivo-laurea/og-cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(13).jpg">
+<meta name="twitter:image" content="https://rdimiccoli.github.io/preventivo-laurea/og-cover.jpg">
 
 <style>
   :root{
@@ -71,7 +73,7 @@
   .photo{width:100%;display:block;border-radius:4px;box-shadow:0 14px 34px rgba(21,60,40,.18);}
 
   /* COVER */
-  .cover{padding:0;text-align:center;position:relative;overflow:hidden;min-height:100svh;display:flex;flex-direction:column;background:var(--paper);}
+  .cover{padding:0;text-align:center;position:relative;overflow:hidden;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;background:var(--paper);}
   .cover-img-wrap{position:absolute;inset:0;}
   .cover-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(1.02);opacity:.95;}
   .cover-img-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,30,20,.30) 0%,rgba(10,30,20,.45) 55%,rgba(8,24,16,.78) 100%);}
@@ -126,10 +128,6 @@
   .interlude .veil .q{font-style:italic;font-size:clamp(1.5rem,6vw,2.1rem);line-height:1.35;max-width:24ch;text-shadow:0 1px 14px rgba(0,0,0,.4);font-weight:400;}
   .interlude .veil .sig{margin-top:20px;font-size:.74rem;letter-spacing:.32em;text-transform:uppercase;color:#A9D9C2;opacity:.95;}
 
-  /* PORTFOLIO */
-  .btn-portfolio{display:inline-block;margin-top:8px;padding:16px 36px;border:1px solid var(--emerald);color:var(--emerald-deep);text-decoration:none;letter-spacing:.22em;text-transform:uppercase;font-size:.85rem;transition:background .25s,color .25s;}
-  .btn-portfolio:hover{background:var(--emerald);color:#fff;}
-
   /* INFO */
   .info{background:var(--paper-2);}
   .info .block{margin-bottom:30px;}
@@ -154,9 +152,6 @@
   .thanks .contact .name{font-size:1.4rem;letter-spacing:.3em;text-transform:uppercase;font-weight:500;margin-bottom:16px;color:var(--emerald-deep);}
   .thanks .contact a, .thanks .contact div{display:block;color:var(--ink);text-decoration:none;letter-spacing:.14em;font-size:1.02rem;line-height:2;}
 
-  .toolbar{position:fixed;right:18px;bottom:18px;z-index:50;}
-  .toolbar button{font-family:var(--serif);font-size:1rem;letter-spacing:.04em;background:var(--emerald-deep);color:#fff;border:0;border-radius:40px;padding:14px 22px;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.25);}
-  .toolbar button:hover{background:var(--emerald);}
 
   @media (min-width:560px){
     .cards{grid-template-columns:1fr 1fr;gap:14px;align-items:stretch;}
@@ -168,7 +163,6 @@
     @page{size:A4;margin:0;}
     body{background:#fff;}
     .doc{max-width:none;box-shadow:none;}
-    .toolbar{display:none;}
     .page,.cover,.interlude,.thanks,.cta-big-wrap{page-break-after:always;break-after:page;}
     .thanks{page-break-after:auto;}
     *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
@@ -182,7 +176,7 @@
   <!-- COVER -->
   <section class="cover" style="border-top:0;">
     <div class="cover-img-wrap">
-      <img alt="Festa di laurea" loading="eager" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(13).jpg">
+      <img alt="Festa di laurea" loading="eager" fetchpriority="high" decoding="async" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(13).jpg">
     </div>
     <div class="cover-content">
       <div class="brand">
@@ -191,7 +185,7 @@
       </div>
       <p class="eyebrow">Preventivo · Servizio fotografico</p>
       <h1>Festa<br>di Laurea</h1>
-      <p class="prepared" style="margin-top:14px;">Valido 30 giorni · 2026</p>
+      <p class="prepared" style="margin-top:14px;">Valido <strong>30 giorni</strong> dalla data di invio · 2026</p>
     </div>
   </section>
 
@@ -205,7 +199,7 @@
       </div>
     </div>
     <figure>
-      <img style=" filter: brightness(1.05); opacity: 0.95;" class="photo" alt="Dettaglio laurea" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(29).jpg">
+      <img class="photo" loading="lazy" decoding="async" alt="Dettaglio laurea" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(29).jpg">
     </figure>
     <div class="body">
       <p>Il servizio comprende la copertura fotografica dei <strong>momenti che precedono la seduta</strong> di laurea, realizzati in stile reportage, le foto durante la <strong>seduta</strong>, la <strong>proclamazione</strong> e gli scatti successivi dedicati al/alla laureato/a, al <strong>brindisi</strong> e ai momenti con amici e familiari.</p>
@@ -222,7 +216,7 @@
 
   <!-- DIVIDER 1 -->
   <section class="interlude">
-    <img alt="Tocco accademico" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(340).jpg">
+    <img loading="lazy" decoding="async" alt="Tocco accademico" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(340).jpg">
     <div class="veil">
       <div class="q">«Il traguardo di anni di impegno, in un solo giorno.»</div>
       <div class="sig">Ruggiero Dimiccoli · Fotografia</div>
@@ -239,7 +233,7 @@
       </div>
     </div>
     <figure>
-      <img style=" filter: brightness(1.05); opacity: 0.95;" class="photo" alt="Festa di laurea" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(410).jpg">
+      <img class="photo" loading="lazy" decoding="async" alt="Festa di laurea" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(410).jpg">
     </figure>
     <div class="body">
       <p>Il servizio copre <strong>l'intera festa</strong> fino al momento in cui sarà ritenuto di aver raccolto tutto il materiale necessario a rappresentare in modo completo e coerente l'evento.</p>
@@ -257,7 +251,7 @@
 
   <!-- DIVIDER 2 -->
   <section class="interlude">
-    <img alt="Dettaglio accademico" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(118).jpg">
+    <img loading="lazy" decoding="async" alt="Dettaglio accademico" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(118).jpg">
     <div class="veil">
       <div class="q">«Un capitolo che si chiude: il traguardo nei suoi dettagli più veri»</div>
       <div class="sig">Festa di laurea · Reportage</div>
@@ -274,7 +268,7 @@
       </div>
     </div>
     <figure>
-      <img style=" filter: brightness(1.05); opacity: 0.95;" class="photo" alt="Momenti della serata" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(146).jpg">
+      <img class="photo" loading="lazy" decoding="async" alt="Momenti della serata" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(146).jpg">
     </figure>
     <div class="body">
       <p>Il servizio comprende la mia presenza <strong>sin dall'inizio della festa</strong>, con una sessione di scatti dedicati al/alla festeggiato/a prima dell'arrivo degli invitati.</p>
@@ -300,7 +294,7 @@
       </div>
     </div>
     <figure>
-      <img style=" filter: brightness(1.05); opacity: 0.95;" class="photo" alt="Momento torta" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(204).jpg">
+      <img class="photo" loading="lazy" decoding="async" alt="Momento torta" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-laurea/(204).jpg">
     </figure>
     <div class="body">
       <p>Il servizio prevede una <strong>sessione dedicata al/alla festeggiato/a</strong> prima dell'arrivo degli invitati, seguita dai soli scatti del <strong>momento torta</strong>.</p>
@@ -342,7 +336,8 @@
     <div class="block">
       <h3>Zona di copertura</h3>
       <p>Il servizio è disponibile su tutta la <strong>provincia BAT</strong> senza costi aggiuntivi.</p>
-      <p>Per la <strong>seduta di laurea</strong> oltre le province di Bari o Foggia, e per eventi in <strong>altre province</strong>, è previsto un contributo spese di trasferta.</p>
+      <p>Per eventi in <strong>altre province</strong> è previsto un contributo spese di trasferta di <strong>€ 40</strong>.</p>
+      <p>Per la <strong>seduta di laurea</strong> presso sedi universitarie oltre le province di Bari o Foggia, il contributo viene concordato in base alla distanza.</p>
     </div>
   </section>
 
@@ -389,12 +384,6 @@
     </div>
   </section>
 
-  <!-- CTA GRANDE -->
-  <div class="cta-big-wrap">
-    <p class="sub">Hai scelto la soluzione giusta per la tua laurea?<br>Prenota subito per bloccare la data.</p>
-    <a class="cta-big" href="https://booking-fotografo.vercel.app" target="_blank" rel="noopener">Prenota ora</a>
-  </div>
-
   <!-- CONFRONTO -->
   <section class="compare page">
     <p class="eyebrow" style="text-align:center;">Quattro soluzioni</p>
@@ -406,7 +395,7 @@
       <div class="card">
         <div class="k">Soluzione 1</div>
         <h3>La seduta in facoltà</h3>
-        <div class="amount">€&nbsp;100</div>
+        <div class="amount">€&nbsp;150</div>
         <ul>
           <li>Momenti prima della seduta</li>
           <li>Seduta e proclamazione</li>
@@ -449,6 +438,12 @@
     <div class="note">Tutte le soluzioni includono la <strong>consegna digitale</strong> degli scatti e <strong>10 stampe omaggio</strong> in formato 15×22 cm.</div>
   </section>
 
+  <!-- CTA GRANDE -->
+  <div class="cta-big-wrap">
+    <p class="sub">Hai scelto la soluzione giusta per la tua laurea?<br>Prenota subito per bloccare la data.</p>
+    <a class="cta-big" href="https://booking-fotografo.vercel.app" target="_blank" rel="noopener">Prenota ora</a>
+  </div>
+
   <!-- GRAZIE -->
   <section class="thanks">
     <h2>Grazie</h2>
@@ -456,7 +451,8 @@
     <div class="diamond center"><span>◆</span></div>
     <div class="contact">
       <div class="name">Ruggiero Dimiccoli</div>
-      <a href="https://wa.me/393299392486">Scrivimi su WhatsApp</a>
+      <a href="https://wa.me/393299392486?text=Ciao%20Ruggiero%2C%20ho%20letto%20il%20preventivo%20per%20la%20festa%20di%20laurea%20e%20vorrei%20qualche%20informazione." target="_blank" rel="noopener">Scrivimi su WhatsApp</a>
+      <div>+39 329 939 2486</div>
     </div>
   </section>
 
